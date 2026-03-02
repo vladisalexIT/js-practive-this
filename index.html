@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS-homework</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./script.js" defer></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="card bmw">
+            <h2>🚗 BMW M3 Время пути</h2>
+            <div class="car-info" id="carInfo">
+                Скорость: 320 км/ч | Разгон 0-100: 3.2с | Мощность: 510 л.с.
+            </div>
+            <input type="number" id="distanceInput" placeholder="Расстояние (км)" value="4345">
+            <div class="result" id="result"></div>
+        </div>
+
+        <div class="card fractions">
+            <h2>🔢 Калькулятор дробей</h2>
+            <div class="fraction-info" id="fractionInfo">
+                Пример: 5/6 + 2/5 = 29/30
+            </div>
+
+            <div class="fraction-inputs">
+                <div class="fraction-part">
+                    <input type="number" id="num1" placeholder="Числитель" value="5">
+                    <div class="fraction-line"></div>
+                    <input type="number" id="den1" placeholder="Знаменатель" value="6">
+                </div>
+
+                <button class="operator" id="operator">+</button>
+
+                <div class="fraction-part">
+                    <input type="number" id="num2" placeholder="Числитель" value="2">
+                    <div class="fraction-line"></div>
+                    <input type="number" id="den2" placeholder="Знаменатель" value="5">
+                </div>
+            </div>
+
+            <div class="result" id="fractionResult"></div>
+        </div>
+
+        <div class="card time">
+            <h2>⏰ Калькулятор времени</h2>
+            <div class="time-info" id="timeInfo">
+                Добавляйте секунды, минуты, часы
+            </div>
+
+            <div class="time-display" id="timeDisplay">12:15:30</div>
+
+            <div class="time-controls">
+                <button id="btnSeconds" class="time-btn">+45 сек</button>
+                <button id="btnMinutes" class="time-btn">+25 мин</button>
+                <button id="btnHours" class="time-btn">+3 часа</button>
+            </div>
+
+            <div class="result" id="timeResult">Время нормализировано!</div>
+        </div>
+    </div>
+
+    <script src="./script/car.js" type="module"></script>
+    <script src="./script/fraction.js" type="module"></script>
+    <script src="./script/time.js" type="module"></script>
+    <script src="./script/main.js" type="module"></script>
+</body>
+
+</html>
